@@ -6,8 +6,12 @@
 
   <persistence-unit name="pet-eval" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-
-
+    <class>fr.epsi.i1cap2024Eval.domain.PetStore</class>
+    <class>fr.epsi.i1cap2024Eval.domain.Address</class>
+    <class>fr.epsi.i1cap2024Eval.domain.Animal</class>
+    <class>fr.epsi.i1cap2024Eval.domain.Cat</class>
+    <class>fr.epsi.i1cap2024Eval.domain.Fish</class>
+    <class>fr.epsi.i1cap2024Eval.domain.Product</class>
     <properties>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/petstore" />
       <property name="jakarta.persistence.jdbc.user" value="root" />
